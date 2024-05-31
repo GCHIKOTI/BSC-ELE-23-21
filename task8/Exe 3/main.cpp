@@ -1,0 +1,18 @@
+#include <iostream>
+#include "Person.h"
+
+using namespace std;
+
+int main() {
+    Person Jane = Person("Jane", 60.0f);
+    Person John = Person("John", 75.0f);
+
+    float totalWeight = Jane + John;
+
+    int johnAge = static_cast<int>(John.getWeight());
+
+    cout << "Total weight: " << totalWeight << endl;
+    cout << "John's Age: " << johnAge << endl;
+
+    return 0;
+}
